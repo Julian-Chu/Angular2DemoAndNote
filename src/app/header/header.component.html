@@ -29,7 +29,7 @@
           (click)="changeTitle($event)" />
 
           <div class="pull-left">
-            <h1><a href="http://blog.miniasp.com/">The Will Will Web</a></h1>
+            <h1><a href="http://blog.miniasp.com/">{{title}}</a></h1>
             <h3 [class.highlight]="is_h3_highlight"
                 (click) = "updateh3Class()"
                 [style.background-color]="'yellow'"
