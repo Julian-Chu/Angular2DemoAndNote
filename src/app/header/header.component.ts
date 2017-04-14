@@ -14,9 +14,22 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeTitle(evt:MouseEvent){
-      this.title = 'The Will Will Web';
-      console.log(evt);
-      console.log(evt.clientX);
+  is_h3_highlight = false;
+
+  changeTitle(evt: MouseEvent) {
+    this.title = 'The Will Will Web';
+    console.log(evt);
+    console.log(evt.clientX);
+  }
+
+  getStyle() {
+    return { 'background-color': 'yellow' };
+  }
+
+  updateh3Class() {
+    if (this.is_h3_highlight == false)
+      this.is_h3_highlight = true;
+    else
+    { this.is_h3_highlight = false; }
   }
 }
