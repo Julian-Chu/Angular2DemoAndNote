@@ -30,9 +30,9 @@
 
           <div class="pull-left">
             <h1><a href="http://blog.miniasp.com/">The Will Will Web</a></h1>
-            <h3 [ngClass]="{'highlight': is_h3_highlight}"
+            <h3 [class.highlight]="is_h3_highlight"
                 (click) = "updateh3Class()"
-                [ngStyle]="getStyle()"
+                [style.background-color]="'yellow'"
                 >
 
                 記載著 Will 在網路世界的學習心得與技術分享</h3>
