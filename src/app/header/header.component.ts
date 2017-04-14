@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   }
 
   is_h3_highlight = false;
+  counter:number = 0;
 
   changeTitle(evt: MouseEvent) {
     this.title = 'The Will Will Web';
@@ -31,5 +32,6 @@ export class HeaderComponent implements OnInit {
       this.is_h3_highlight = true;
     else
     { this.is_h3_highlight = false; }
+    this.counter++;
   }
 }
