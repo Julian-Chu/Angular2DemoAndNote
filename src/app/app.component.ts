@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  keyword = "";
+  keyword = '';
+
+  changeKeyword($event: KeyboardEvent){
+    this.keyword = ($event.target as HTMLInputElement).value;
+  }
 }
