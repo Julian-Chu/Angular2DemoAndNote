@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   @Output()
   titleChanged = new EventEmitter();
-  constructor() { }
+  constructor(public datasvc:DataService) { }
 
   ngOnInit() {
   }

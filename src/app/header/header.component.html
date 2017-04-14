@@ -12,7 +12,7 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav ">
-              <li><a href="http://blog.miniasp.com/">{{title}}</a></li>
+              <li><a href="http://blog.miniasp.com/">{{datasvc.title}}</a></li>
               <li><a href="http://blog.miniasp.com/archive.aspx">文章彙整</a></li>
               <li><a href="http://blog.miniasp.com/contact.aspx">與我聯絡</a></li>
             </ul>
@@ -29,7 +29,7 @@
           (click)="changeTitle($event)" />
 
           <div class="pull-left">
-            <h1><a href="http://blog.miniasp.com/">{{title}}</a></h1>
+            <h1><a href="http://blog.miniasp.com/">{{datasvc.title}}</a></h1>
             <h3 [class.highlight]="is_h3_highlight"
                 (click) = "updateh3Class()"
                 [style.background-color]="'yellow'"
