@@ -9,8 +9,8 @@ export class AppComponent {
   title = 'app works!';
   keyword = '';
 
-  changeKeyword($event: KeyboardEvent){
-    this.keyword = ($event.target as HTMLInputElement).value;
+  changeKeyword(keyword:string){
+    this.keyword = keyword;
   }
 
   clearKeyword($event: KeyboardEvent)
